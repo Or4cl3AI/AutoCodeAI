@@ -1,0 +1,7 @@
+Flask
+NLTK
+tensorflow
+torch
+keras
+scikit-learn
+pandas
