@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+
+  /* Adjust layout for smaller screens */
+  .touch-friendly-menu {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-button, .menu-options button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .touch-friendly-button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+}
