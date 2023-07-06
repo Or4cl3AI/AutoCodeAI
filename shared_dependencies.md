@@ -1,13 +1,13 @@
-1. Shared Libraries: The libraries `tensorflow`, `Flask`, `nltk`, and `pandas` are shared across multiple files. 
+The shared dependencies in the "AutoCodeAIApp.py" file include:
 
-2. Shared Functions: The function `predict_output()` is defined in `app/model/predict.py` and used in `api/routes.py`. 
+1. Imported Libraries: The file imports the `tkinter` and `ttk` libraries from Python's standard library. These libraries are used for creating the graphical user interface of the application.
 
-3. Shared Variables: The variable `code` is used in `app/code_editor/main.py`, `app/code_editor/utils/autocompletion.py`, and `app/code_editor/utils/syntax_highlighting.py`. The variable `input_data` is used in `api/routes.py`.
+2. Class Name: The file defines a class named `AutoCodeAIApp` which inherits from `tk.Tk`. This class is the main application class.
 
-4. Shared DOM Elements: The DOM elements with ids `code-editor` and `output` are defined in `templates/index.html` and can be used in any linked JavaScript files.
+3. Instance Variables: The `AutoCodeAIApp` class has two instance variables, `self.code_input` and `self.code_output`, which are both instances of `tk.StringVar`. These variables are used to store the user's input and the generated code respectively.
 
-5. Shared Data Schemas: The `response` dictionary schema in `api/routes.py` is shared as it is sent to the client-side and can be used in any client-side JavaScript files.
+4. Function Names: The `AutoCodeAIApp` class defines several methods including `__init__`, `create_input_field`, `create_output_field`, `generate_code`, and `generate_code_from_input`. These methods are used to initialize the application, create the input and output fields, generate the code based on the user's input, and implement the code generation logic respectively.
 
-6. Shared Message Names: No shared message names are explicitly mentioned in the provided code.
+5. Event Binding: The `input_entry` widget binds the `<KeyRelease>` event to the `self.generate_code` method. This means that the `generate_code` method is called every time a key is released in the `input_entry` widget.
 
-7. Shared Function Names: The function names `run_code`, `get_suggestions`, `highlight_syntax`, `train_model`, `predict_output`, `preprocess_input`, `postprocess_output`, `index`, and `get_prediction` are shared across multiple files.
+6. Main Execution: The `if __name__ == "__main__":` block is used to run the application when the script is executed directly. It creates an instance of the `AutoCodeAIApp` class and starts the main event loop.
