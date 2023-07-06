@@ -1,13 +1,19 @@
-1. Shared Libraries: The libraries `tensorflow`, `Flask`, `nltk`, and `pandas` are shared across multiple files. 
+The shared dependencies between the files "AutoCodeAI/app.py", "AutoCodeAI/templates/index.html", "AutoCodeAI/static/js/main.js", and "AutoCodeAI/static/css/styles.css" are:
 
-2. Shared Functions: The function `predict_output()` is defined in `app/model/predict.py` and used in `api/routes.py`. 
+1. Function Names:
+   - `generate_code`: This function is defined in "app.py" and is used in "main.js" to process the user's input and generate code.
 
-3. Shared Variables: The variable `code` is used in `app/code_editor/main.py`, `app/code_editor/utils/autocompletion.py`, and `app/code_editor/utils/syntax_highlighting.py`. The variable `input_data` is used in `api/routes.py`.
+2. DOM Element IDs:
+   - `code-input-field`: This is the ID of the text field where the user enters their input. It is defined in "index.html" and used in "main.js" to get the user's input.
+   - `generated-code-section`: This is the ID of the section where the generated code snippets or functions are displayed. It is defined in "index.html" and used in "main.js" to display the generated code.
+   - `code-editor`: This is the ID of the code editor where the generated code can be inserted for further editing or compilation. It is defined in "index.html" and used in "main.js" to insert the generated code.
 
-4. Shared DOM Elements: The DOM elements with ids `code-editor` and `output` are defined in `templates/index.html` and can be used in any linked JavaScript files.
+3. Class Names:
+   - `insert-button`: This is the class of the buttons that allow the user to insert the generated code into the code editor. It is defined in "index.html" and used in "main.js" to bind the click event listener.
+   - `generated-code`: This is the class of the div elements that contain the generated code snippets or functions. It is defined in "index.html" and used in "main.js" to get the generated code.
 
-5. Shared Data Schemas: The `response` dictionary schema in `api/routes.py` is shared as it is sent to the client-side and can be used in any client-side JavaScript files.
+4. CSS Styles:
+   - The styles defined in "styles.css" are used to style the elements in "index.html". The specific class and ID selectors used in the CSS file correspond to the classes and IDs of the elements in the HTML file.
 
-6. Shared Message Names: No shared message names are explicitly mentioned in the provided code.
-
-7. Shared Function Names: The function names `run_code`, `get_suggestions`, `highlight_syntax`, `train_model`, `predict_output`, `preprocess_input`, `postprocess_output`, `index`, and `get_prediction` are shared across multiple files.
+5. Libraries:
+   - `nltk`: This library is imported in "app.py" for natural language processing.
