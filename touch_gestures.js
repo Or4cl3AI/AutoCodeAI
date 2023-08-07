@@ -1,4 +1,3 @@
-```javascript
 let initialTouchPosition = null;
 
 function handleTouchStart(event) {
@@ -23,4 +22,3 @@ let container = document.querySelector('.container'); // Replace '.container' wi
 
 container.addEventListener('touchstart', handleTouchStart, false);
 container.addEventListener('touchmove', handleTouchMove, false);
-```
