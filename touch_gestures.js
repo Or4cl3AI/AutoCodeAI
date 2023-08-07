@@ -19,6 +19,3 @@ function handleTouchMove(event) {
 }
 
 let container = document.querySelector('.container'); // Replace '.container' with actual container selector
-
-container.addEventListener('touchstart', handleTouchStart, false);
-container.addEventListener('touchmove', handleTouchMove, false);
