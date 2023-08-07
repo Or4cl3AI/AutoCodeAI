@@ -1,13 +1,34 @@
-1. Shared Libraries: The libraries `tensorflow`, `Flask`, `nltk`, and `pandas` are shared across multiple files. 
+Shared Dependencies:
 
-2. Shared Functions: The function `predict_output()` is defined in `app/model/predict.py` and used in `api/routes.py`. 
-
-3. Shared Variables: The variable `code` is used in `app/code_editor/main.py`, `app/code_editor/utils/autocompletion.py`, and `app/code_editor/utils/syntax_highlighting.py`. The variable `input_data` is used in `api/routes.py`.
-
-4. Shared DOM Elements: The DOM elements with ids `code-editor` and `output` are defined in `templates/index.html` and can be used in any linked JavaScript files.
-
-5. Shared Data Schemas: The `response` dictionary schema in `api/routes.py` is shared as it is sent to the client-side and can be used in any client-side JavaScript files.
-
-6. Shared Message Names: No shared message names are explicitly mentioned in the provided code.
-
-7. Shared Function Names: The function names `run_code`, `get_suggestions`, `highlight_syntax`, `train_model`, `predict_output`, `preprocess_input`, `postprocess_output`, `index`, and `get_prediction` are shared across multiple files.
+1. CSS Classes: 
+   - "touch-friendly-menu"
+   - "menu-button"
+   - "menu-options"
+   - "touch-friendly-button"
+   - "section"
+   - "active"
+   - "sectionToggleButton"
+   
+   2. JavaScript Variables:
+   - "inputField" (used in "virtual_keyboard_support.js" and "mobile_specific_input_methods.js")
+   - "codeKeyboard" (defined in "mobile_specific_input_methods.js")
+   - "touchCodeEditor" (defined in "mobile_specific_input_methods.js")
+   - "codeEditor" (used in "mobile_specific_input_methods.js")
+   - "section" (used in "simplified_ui.js")
+   - "sectionToggleButton" (used in "simplified_ui.js")
+   
+   3. JavaScript Functions:
+   - "handleTouchStart" (defined in "touch_gestures.js")
+   - "handleTouchMove" (defined in "touch_gestures.js")
+   
+   4. HTML Elements:
+   - Buttons within the "touch-friendly-menu" div (used in "touch_friendly_controls.html")
+   - "sectionToggleButton" (used in "simplified_ui.js")
+   
+   5. Media Queries:
+   - "@media screen and (max-width: 768px)" (used in "responsive_design.css")
+   
+   6. Event Listeners:
+   - 'focus' event listener (used in "virtual_keyboard_support.js")
+   - 'click' event listener (used in "simplified_ui.js")
+   - 'touchstart' and 'touchmove' event listeners (used in "touch_gestures.js")

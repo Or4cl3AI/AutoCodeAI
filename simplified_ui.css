@@ -1,0 +1,8 @@
+/* Collapse sections for a cleaner user interface */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
