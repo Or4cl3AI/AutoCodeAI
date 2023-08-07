@@ -7,6 +7,7 @@ Shared Dependencies:
    - "touch-friendly-button"
    - "section"
    - "active"
+   - "sectionToggleButton"
 
 2. JavaScript Variables:
    - "inputField" (used in "virtual_keyboard_support.js" and "mobile_specific_input_methods.js")
